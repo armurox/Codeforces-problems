@@ -1,1 +1,1 @@
-These are solutions that I am actively working on and updating for Codeforces problems. They are commonly solved past problems.
+These are solutions that I am actively working on and updating for Codeforces problems. They are commonly solved past problems. My solutions are usually split into headers and different files, as I prefer to code that way, although occasionally you may see it all in one file, if I chose to code directly in the Codeforces IDE.
