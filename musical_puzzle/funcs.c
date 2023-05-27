@@ -15,14 +15,12 @@ void min_num(char *arr, int size)
         {
             if (arr[i] != used_arr[j] || arr[i + 1] != used_arr[j + 1])
             {
-                total_num++;
-                used_arr[x] = arr[i];
-                used_arr[x + 1] = arr[i + 1];
-                x += 2;
                 // printf("test\n");
             }
         }
-
+        used_arr[x] = arr[i];
+        used_arr[x + 1] = arr[i + 1];
+        x += 2;
     }
 
     printf("%d\n", total_num);
