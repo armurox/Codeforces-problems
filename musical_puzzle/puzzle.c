@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "funcs.h"
 
 int main()
 {
@@ -18,7 +19,8 @@ int main()
         {
             scanf("%d", arr + i);
         }
-    }
 
-    min_num(arr, arr_size);
+        min_num(arr, arr_size);
+        free(arr);
+    }
 }
