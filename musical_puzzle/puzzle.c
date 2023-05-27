@@ -17,7 +17,7 @@ int main()
         char *arr = calloc(arr_size + 1, sizeof(char));
         for (int j = 0; j < arr_size; j++)
         {
-            scanf(" %c", arr + i);
+            scanf(" %c", arr + j);
         }
 
         min_num(arr, arr_size);
