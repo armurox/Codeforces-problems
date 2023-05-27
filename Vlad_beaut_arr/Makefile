@@ -11,4 +11,4 @@ funcs.o: funcs.c funcs.h
 	$(CC) $(CFLAGS) -c funcs.c
 
 clean:
-	rm -f *.o funcs
+	rm -f *.o beaut_arr
