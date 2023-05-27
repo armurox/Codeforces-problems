@@ -13,11 +13,12 @@ void min_num(char *arr, int size)
         // printf("test1\n");
         for (int j = 0; j < size; j += 2)
         {
-            if (arr[i] != used_arr[j] || arr[i + 1] != used_arr[j + 1])
+            if (arr[i] == used_arr[j] && arr[i + 1] == used_arr[j + 1])
             {
                 // printf("test\n");
             }
         }
+
         used_arr[x] = arr[i];
         used_arr[x + 1] = arr[i + 1];
         x += 2;
