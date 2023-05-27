@@ -1,0 +1,1 @@
+This is my current best solution for the problem "Vlad Building Beautiful Array" which is an 800 rated problem. My current solution does not pass the 11th test as it exceeds the time limit. Next steps would be to perhaps consider a different data structure to store the odd numbers.
