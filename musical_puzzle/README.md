@@ -1,0 +1,1 @@
+This is my current best solution to the Musical Puzzle problem on Codeforces. The current solution has a runtime error on the third test that I am currently fixing.
