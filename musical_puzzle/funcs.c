@@ -5,14 +5,14 @@
 
 void min_num(char *arr, int size)
 {
-    char *used_arr = calloc((size), sizeof(char));
+    char *used_arr = calloc(((2 * size)), sizeof(char));
     int total_num = 0;
     int x = 0;
     int check = 0;
     for (int i = 0; arr[i + 1] != '\0'; i++)
     {
         // Check if current melody is in used array
-        for (int j = 0; j < size; j += 2)
+        for (int j = 0; j < 2 * size; j += 2)
         {
             if (arr[i] == used_arr[j] && arr[i + 1] == used_arr[j + 1])
             {
