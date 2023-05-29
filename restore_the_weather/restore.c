@@ -3,13 +3,6 @@
 
 void print_correct(int *expected_temp, int *act_temp, int size, int allowed_diff);
 
-// typdef struct 
-// {
-//     int *sol_arr;
-
-// } Solutions;
-
-
 int main()
 {
     // Get number of test cases from user
@@ -50,14 +43,11 @@ void print_correct(int *expected_temp, int *act_temp, int size, int allowed_diff
 {
     // Dynamically allocate an array which will contain the correct solution
     int *corr_arr = malloc(sizeof(int) * size);
-    // Keep track of multiple possible solutions, only allow unique solutions
-    // int mul_sol = 0;
     int temp;
     int swap = 0;
     for (int i = 0; i < size; i++)
     {
         swap = 0;
-        // mul_sol = 0;
         for (int j = i; j < size; j++)
         {
             if (abs(expected_temp[i] - act_temp[j]) <= allowed_diff)
