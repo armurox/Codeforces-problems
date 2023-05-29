@@ -1,0 +1,1 @@
+This is my current best solution to Codeforces problem 1833B Restore the weather. The current solution only passes test 1, and not the others, which means that I am looking at revamping the algorithm I am using at the moment.
