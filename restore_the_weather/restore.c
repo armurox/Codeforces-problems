@@ -6,11 +6,11 @@ void print_correct(int *expected_temp, int *act_temp, int size, int allowed_diff
 int main()
 {
     // Get number of test cases from user
-    // int case_num;
-    // scanf("%d ", &case_num);
+    int case_num;
+    scanf("%d ", &case_num);
 
-    // for (int i = 0; i < case_num; i++)
-    // {
+     for (int i = 0; i < case_num; i++)
+    {
         // Get array size and max difference between expected and actual temperature from user
         int arr_size;
         int k;
@@ -35,7 +35,7 @@ int main()
 
         free(expected_temp);
         free(act_temp);
-    // }
+    }
 
 }
 
@@ -54,6 +54,7 @@ void print_correct(int *expected_temp, int *act_temp, int size, int allowed_diff
                 act_temp[j] = act_temp[i];
                 act_temp[i] = temp;
                 swap++;
+                break;
             }
         }
 
@@ -67,6 +68,7 @@ void print_correct(int *expected_temp, int *act_temp, int size, int allowed_diff
                     act_temp[j] = act_temp[i];
                     act_temp[i] = temp;
                     swap++;
+                    break;
                 }
             }
         }
@@ -74,7 +76,11 @@ void print_correct(int *expected_temp, int *act_temp, int size, int allowed_diff
 
     for (int i = 0; i < size; i++)
     {
+        if (i == size - 1)
+        {
+            printf("%d\n", act_temp[i]);
+            break;
+        }
         printf("%d ", act_temp[i]);
     }
-    printf("\n");
 }
