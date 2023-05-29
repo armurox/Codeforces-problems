@@ -41,8 +41,6 @@ int main()
 
 void print_correct(int *expected_temp, int *act_temp, int size, int allowed_diff)
 {
-    // Dynamically allocate an array which will contain the correct solution
-    int *corr_arr = malloc(sizeof(int) * size);
     int temp;
     int swap = 0;
     for (int i = 0; i < size; i++)
