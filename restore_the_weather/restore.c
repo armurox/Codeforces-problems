@@ -52,14 +52,34 @@ void print_correct(int *expected_temp, int *act_temp, int size, int allowed_diff
     int *corr_arr = malloc(sizeof(int) * size);
     // Keep track of multiple possible solutions, only allow unique solutions
     // int mul_sol = 0;
+    int temp;
+    int swap = 0;
     for (int i = 0; i < size; i++)
     {
+        swap = 0;
         // mul_sol = 0;
-        for (int j = 0; j < size; j++)
+        for (int j = i; j < size; j++)
         {
             if (abs(expected_temp[i] - act_temp[j]) <= allowed_diff)
             {
+                temp = act_temp[j];
+                act_temp[j] = act_temp[i];
+                act_temp[i] = temp;
+                swap++;
+            }
+        }
 
+        if (swap == 0)
+        {
+            for (int j = i; j >= 0; j--)
+            {
+                if (abs(expected_temp[i] - act_temp[j]) <= allowed_diff)
+                {
+                    temp = act_temp[j];
+                    act_temp[j] = act_temp[i];
+                    act_temp[i] = temp;
+                    swap++;
+                }
             }
         }
     }
