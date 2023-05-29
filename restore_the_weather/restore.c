@@ -74,6 +74,8 @@ void print_correct(int *expected_temp, int *act_temp, int size, int allowed_diff
         }
     }
 
+    
+
     for (int i = 0; i < size; i++)
     {
         if (i == size - 1)
