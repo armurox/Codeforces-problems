@@ -1,1 +1,1 @@
-This is my current best solution to the Musical Puzzle problem on Codeforces. The solution at the moment has been accepted, so I currently consider this problem solution complete.
+This is my current best solution to the "Musical Puzzle" problem, which is 1833A on Codeforces. The solution at the moment has been accepted, so I consider this problem solution complete, although I may revisit it with another language soon.
