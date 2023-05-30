@@ -1,7 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 void print_correct(int *expected_temp, int *act_temp, int size, int allowed_diff);
+void swap(int *one, int *two);
+
+// Struct that will contain array of valid indices for each current index
+typedef struct Valid
+{
+    int *indices;
+}Valid;
 
 int main()
 {
@@ -39,42 +47,66 @@ int main()
 
 }
 
+void swap(int *one, int *two)
+{
+    int temp = *two;
+    *two = *one;
+    *one = temp;
+}
+
 void print_correct(int *expected_temp, int *act_temp, int size, int allowed_diff)
 {
-    int temp;
-    int swap = 0;
+    int swaps = 0;
+    Valid *x = calloc(size, sizeof(int));
+    int index = 0;
+    int swap_index = 0;
+
     for (int i = 0; i < size; i++)
     {
-        swap = 0;
+        swaps = 0;
+        x[i].indices = malloc(size * sizeof(int));
+        memset(x[i].indices, -1, size * sizeof(int));
+
         for (int j = i; j < size; j++)
         {
+            if (swaps > 0 && abs(expected_temp[i] - act_temp[j]))
+            {
+                x[i].indices[index++] = j;
+            }
+
             if (abs(expected_temp[i] - act_temp[j]) <= allowed_diff)
             {
-                temp = act_temp[j];
-                act_temp[j] = act_temp[i];
-                act_temp[i] = temp;
-                swap++;
-                break;
+                swap(act_temp + i, act_temp + j);
+                swaps++;
             }
         }
 
-        if (swap == 0)
+        if (swaps == 0)
         {
             for (int j = i; j >= 0; j--)
             {
-                if (abs(expected_temp[i] - act_temp[j]) <= allowed_diff)
+                if (abs(expected_temp[i] - act_temp[j]) <= allowed_diff && x[j].indices[0] != -1 && swap_index != i) 
                 {
-                    temp = act_temp[j];
-                    act_temp[j] = act_temp[i];
-                    act_temp[i] = temp;
-                    swap++;
+                    swap(act_temp + i, act_temp + j);
+                    swap(act_temp + i, act_temp + x[i].indices[swap_index++]);
+                    swaps++;
                     break;
                 }
             }
+
+            if (swaps == 0)
+            {
+
+            }
         }
+        index = 0;
     }
 
-    
+    // for (int i = 0; i < size; i++)
+    // {
+    //     free(x[i].indices);
+    // }
+    // free(x);
 
     for (int i = 0; i < size; i++)
     {
