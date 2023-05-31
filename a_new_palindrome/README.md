@@ -1,0 +1,1 @@
+This is my current best solution for the problem 1832A "New Palindrome" which is an 800 rated problem. My current solution has been accepted, and I consider it to be complete. Of course, as always, I may come back at a later date to update the solution to be more efficient if I can come up with a way to do so.
