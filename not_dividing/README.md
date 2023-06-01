@@ -1,0 +1,1 @@
+This is my current best solution for the problem 17294B "Not Dividing" which is a 900 rated problem. My current solution has been accepted, and I consider the problem to be complete. Of course, as always, I may come back to the problem if I come up with a better solution.
