@@ -1,0 +1,1 @@
+This is my current best solution for the problem 1829C "Mr. Perfectly Fine" which is an 800 rated problem. My current solution has been accepted, and however, I think I will definitely be coming back to this problem. There is far too much code-splitting involved for this solution to be considered elegant, so it should be improved upon.
