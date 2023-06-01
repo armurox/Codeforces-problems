@@ -48,6 +48,7 @@ void not_divide(int *arr, int size)
         }
     }
 
+    // Increment by 1 if the following element is divided by the preceding
     for (int i = 0; i < size - 1; i++)
     {
         if (arr[i + 1] % arr[i] == 0)
