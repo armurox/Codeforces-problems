@@ -26,7 +26,7 @@ int main()
         {
             if (j != arr_size - 1)
             {
-                printf("%d", array[j]);
+                printf("%d ", array[j]);
             }
             
             else
