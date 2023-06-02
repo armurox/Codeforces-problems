@@ -1,1 +1,1 @@
-This is my solution to problem 1829B "Blank Space". The current solution has been accpeted, but I need to come back to refactor the code, as it was written in a contest practice setting.
+This is my solution to problem 1829B "Blank Space", an 800 rated problem. The current solution has been accepted, but I need to come back to refactor the code, as it was written in a contest practice setting.
