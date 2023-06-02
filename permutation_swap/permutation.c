@@ -19,17 +19,6 @@ int main()
 
         int swaps = 1;
         int num_sweeps = 0;
-        for (int k = 2; k < arr_size; k++)
-        {
-            while (swaps > 0)
-            {
-                num_sweeps++;
-                swaps = 0;
-                for (int l = 0; l < arr_size; l++)
-                {
-
-                }
-            }
-        }
+        // Solution currently being revamped
     }
 }
