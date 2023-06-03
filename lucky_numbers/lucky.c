@@ -11,6 +11,7 @@ int main()
         int lucky = 0;
         int in;
         int fin;
+        int lucky_num;
         scanf("%d %d", &in, &fin);
         int digits[1000000];
         memset(digits, -1, 1000000);
@@ -55,10 +56,10 @@ int main()
             if (lucky < largest - smallest)
             {
                 lucky = largest - smallest;
-                printf("%d\n", lucky);
+                lucky_num = j;
             }
 
         }
-        printf("%d\n", lucky);
+        printf("%d\n", lucky_num);
     }
 }
