@@ -1,0 +1,1 @@
+This is my solution to the problem 1829A "Love Story", which is an 800 rated problem. The solution has been accepted, and I therefore currently consider the problem to be complete, but of course, as always, I may come back if I think of a more efficient solution. The current solution is a basic O(N) direct comparision of two strings.
