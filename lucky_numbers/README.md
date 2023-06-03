@@ -1,0 +1,1 @@
+This is my current best solution to the problem 1808A "Lucky Numbers". My current solution is a brute force 1, and hence exceeds the appropriate time limit for test 2, and therefore needs to be adjusted.
