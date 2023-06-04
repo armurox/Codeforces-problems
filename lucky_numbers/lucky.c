@@ -53,6 +53,8 @@ int main()
 
             }
 
+            memset(digits, -1, 1000000);
+
             if (lucky < largest - smallest)
             {
                 lucky = largest - smallest;
