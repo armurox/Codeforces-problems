@@ -30,7 +30,7 @@ int main()
 
                 else
                 {
-                    digits[k] = (j / (10 * k)) % 10;
+                    digits[k] = (j / (10)) % 10;
                     j /= 10; 
                     k++;
                 }
