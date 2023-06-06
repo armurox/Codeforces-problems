@@ -52,10 +52,9 @@ int main()
         prev = 0;
         if (new_start > 0 && new_start != size - 1)
         {
-            for (int j = new_start; j < size; j++)
+            for (int j = new_start + 1; j < size; j++)
             {
-                act_pairs = 1 + prev;
-
+                act_pairs += 1 + prev;
                 if (act_pairs > num_pairs)
                 {
                     no++;
