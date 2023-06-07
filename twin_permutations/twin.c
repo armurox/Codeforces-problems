@@ -42,6 +42,7 @@ int main()
                 if (reverse[j] + sum_arr[k] <= b[j - 1])
                 {
                     b[j] = reverse[j] + sum_arr[k];
+                    printf("%d ", b[j]);
                     sum_arr[k] = 40000;
                     break;
                 }
@@ -58,8 +59,8 @@ int main()
         
         for (int j = 0; j < size; j++)
         {
-            b_rev[j] = b_rev[j] - init[j];
-            printf("%d ", b_rev[j]);
+            // b_rev[j] = b_rev[j] - init[j];
+            // printf("%d ", b_rev[j]);
         }
         printf("\n");
         free(b);
