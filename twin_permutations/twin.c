@@ -43,13 +43,9 @@ int main()
                 {
                     b[j] = reverse[j] + sum_arr[k];
                     sum_arr[k] = 40000;
+                    break;
                 }
             }
-        }
-
-        for (int j = 0; j < size; j++)
-        {
-            printf("%d ", b[j]);
         }
         
         // Remember to reverse b once done!
@@ -59,15 +55,17 @@ int main()
             b_rev[j] = b[size - 1 - j];
         }
 
+        
+        for (int j = 0; j < size; j++)
+        {
+            b_rev[j] = b_rev[j] - init[j];
+            printf("%d ", b_rev[j]);
+        }
+        printf("\n");
         free(b);
         free(reverse);
         free(sum_arr);
         free(init);
-        for (int j = 0; j < size; j++)
-        {
-            // printf("%d ", b_rev[j]);
-        }
-        printf("\n");
         free(b_rev);
     }
 }
