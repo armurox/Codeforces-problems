@@ -12,7 +12,7 @@ int main()
         int *init = malloc(sizeof(int) * size);
         for (int j = 0; j < size; j++)
         {
-            scanf("%d", init + i);
+            scanf("%d", init + j);
         }
 
         int *reverse = malloc(sizeof(int) * size);
@@ -37,7 +37,7 @@ int main()
                continue;
             }
 
-            for (int k = 1; k < size; k++)
+            for (int k = 0; k < size; k++)
             {
                 if (reverse[j] + sum_arr[k] <= b[j - 1])
                 {
@@ -45,6 +45,11 @@ int main()
                     sum_arr[k] = 40000;
                 }
             }
+        }
+
+        for (int j = 0; j < size; j++)
+        {
+            printf("%d ", b[j]);
         }
         
         // Remember to reverse b once done!
@@ -60,7 +65,7 @@ int main()
         free(init);
         for (int j = 0; j < size; j++)
         {
-            printf("%d ", b_rev[j]);
+            // printf("%d ", b_rev[j]);
         }
         printf("\n");
         free(b_rev);
