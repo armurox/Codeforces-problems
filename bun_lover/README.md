@@ -1,0 +1,1 @@
+This is my current best solution to the problem 1822C "Bun Lover", which is an 800 recurrence problem. My current solution has been accepted, and I thoroughly enjoyed solving this problem. Note; all long's are replaced with long long on codeforces, and output format is %lld rather than %ld as you see in the current code.
