@@ -6,7 +6,7 @@ int main()
 {
     // Equation used is: x(n) = (n + 1)^2 + 1;
     int case_num;
-    scanf("%ld", &case_num);
+    scanf("%d", &case_num);
     for (int i = 0; i < case_num; i++)
     {
         long roll_size;
