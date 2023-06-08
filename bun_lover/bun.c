@@ -4,5 +4,6 @@
 
 int main()
 {
+    // Current equation is x(n + 1) = x(n) + 2*n + 3
     
 }
