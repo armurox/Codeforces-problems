@@ -1,0 +1,1 @@
+This is my current best solution to the problem 1822B "Karina and Array". My current solution exceeds the acceptable time limit on test 5, so this solution is still a work in progress.
