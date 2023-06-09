@@ -9,13 +9,13 @@ int main()
     {
         int size;
         scanf("%d", &size);
-        int *arr = malloc(sizeof(int) * size);
+        long long *arr = malloc(sizeof(long long) * size);
         for (int j = 0; j < size; j++)
         {
-            scanf("%d", arr + j);
+            scanf("%lld", arr + j);
         }
 
-        int max = -1000000000;
+        long long max = -100000000000;
         for (int j = 0; j < size - 1; j++)
         {
             for (int k = j + 1; k < size; k++)
@@ -27,6 +27,6 @@ int main()
             }
         }
 
-        printf("%d\n", max);
+        printf("%lld\n", max);
     }
 }
