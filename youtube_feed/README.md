@@ -1,0 +1,1 @@
+This is my current best solution to the problem 1822A "Youtube Feed", which is an 800 rated problem. My current solution has been accepted, so I consider the problem to be complete. Of course, as always, i may come back if I can think of a more efficient solution.
