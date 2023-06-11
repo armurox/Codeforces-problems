@@ -1,0 +1,1 @@
+This is my current best solution to the problem 1821A "Matching", which is an 800 rated problem. My current solution has been accepted, and therefore I consider it to be complete. As always, if I come up with a more efficient solution, I will revisit this.
