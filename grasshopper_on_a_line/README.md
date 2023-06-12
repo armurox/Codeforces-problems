@@ -1,0 +1,1 @@
+This is my current best solution to the problem 1837A "Grasshopper On a Line". The solution has been accepted, so I consider it to be complete, but, as always I may come back to it if I think of a better, or more efficient solution.
