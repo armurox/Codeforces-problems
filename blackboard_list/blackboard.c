@@ -22,6 +22,10 @@ int main()
             {
                 for (int l = 0; l < size; l++)
                 {
+                    if (l == j || l == k)
+                    {
+                        continue;
+                    }
                     int test = abs(arr[j] - arr[k]);
                     if (test == arr[l])
                     {
