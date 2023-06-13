@@ -1,0 +1,1 @@
+This is my current best solution to the problem 1838A "Blackboard List", an 800 rated problem. Currently, my solution provides a wrong answer on test 2, so it is still under development.
