@@ -1,1 +1,1 @@
-This is my current best solution to the problem 1840A "Cipher Shifter", an 800 rated problem. My solution has been accepted, so I consider this problem to be complete, but, as always, I may come back if I can think of a more efficient solution.
+This is my current best solution to the problem 1840A "Cipher Shifter", an 800 rated problem. My solution has been accepted, so I consider this problem to be complete, but, as always, I may come back if I can think of a more efficient solution. I currently have written up the solution in both Python and C.
