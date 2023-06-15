@@ -1,0 +1,1 @@
+This my current solution attempt at problem 1820A, "Yura's New Name", an 800 rated problem. My solution does not pass test 1, so it is still in development.
