@@ -52,5 +52,7 @@ int main()
         }
 
         printf("%d\n", replace_num);
+        // Need to create the new string in order for the solution to not over count
+        // May try in python
     }
 }
