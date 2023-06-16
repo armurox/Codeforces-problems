@@ -51,6 +51,6 @@ int main()
                 }
             }
         }
-    printf("%d\n", num_left);
+        printf("%d\n", num_left);
     }
 }
