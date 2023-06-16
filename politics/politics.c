@@ -52,5 +52,11 @@ int main()
             }
         }
         printf("%d\n", num_left);
+        free(removed);
+        for (int j = 0; j < k; j++)
+        {
+            free(*(arr + j));
+        }
+        free(arr);
     }
 }
