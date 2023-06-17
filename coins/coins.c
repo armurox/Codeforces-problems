@@ -15,11 +15,11 @@ int main()
             printf("YES\n");
         }
 
-        else if (n % 2 != 0 && k % 2!= 0 && k < n)
+        else if (n % 2 != 0 && k % 2!= 0 && k <= n)
         {
             printf("YES\n");
         }
-        
+
         else
         {
             printf("NO\n");
