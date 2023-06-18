@@ -16,6 +16,9 @@ int main()
         }
 
         else 
-        printf("Alice\n");
+        {
+            printf("Alice\n");
+        }
+        
     }
 }
