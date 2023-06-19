@@ -1,0 +1,1 @@
+This is my current best solution to the problem 1811A "Insert Digit", which is an 800 rated problem. There is a minor problem to solve to get this solution accpted (including long long vs long error).
