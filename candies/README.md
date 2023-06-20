@@ -1,0 +1,1 @@
+This is my current best solution to problem 1810B "Candies", whcih is an 800 rated problem. The current solution has been accepted, and therefore I consider it to be complete. This solution was done recursively. As always, if I come up with a more efficient solution, I will come back to the problem, but at the moment, I consider it to be complete.
