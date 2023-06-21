@@ -1,0 +1,1 @@
+This is my current solution to the problem 1834A "Unit Array". My solution has been accepted, and therefore I consider it to be complete, however, as always, if I can think of a better solution, I will return to the problem. Python version of the solution also forthcoming.
