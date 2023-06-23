@@ -1,0 +1,1 @@
+This is my current best solution to the problem 1810A "Beautiful Sequence", which is an 800 rated problem. My current solution has been accepted, and hence I consider it to be complete. Of course, as always, if I thinj of a better solution, I shall return to the problem.
