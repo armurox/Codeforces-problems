@@ -1,0 +1,1 @@
+This is my current best solution to problem 1809A "Garland", which is an 800 rated problem. My current solution passes test 1, but not test 2, so it is still under construction.
