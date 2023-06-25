@@ -1,0 +1,1 @@
+This is my current best solution to the problem 1807B "Grab the Candies", which is an 800 rated problem. My current solution has been accepted, and hence I consider it to be complete. as always, if I can think of a more efficient solution I shall return to the problem. For this problem, I have written up my solutions in C and Python.
