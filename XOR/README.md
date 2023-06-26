@@ -1,0 +1,1 @@
+This is my current best solution to the problem 1758B "XOR = Average", which is a 900 rated problem. My solution has been accepted, and hence I consider it to be complete. Of course, as always, if I can think of a more efficient solution, I shall return to the problem.
