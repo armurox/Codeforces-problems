@@ -1,0 +1,1 @@
+This is my current best solution to the problem 1807D "Odd Queries", which is a 900 rated problem. My current solution exceeds the time limit on test 6, so the algorithm is currently being rethought. 
