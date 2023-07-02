@@ -1,0 +1,1 @@
+This is my current best solution to the problem 1805B "The String has a Target". My current solution has been accepted, and therefore I consider it to be complete. Of course, as always, if I think of a more efficient solution, I shall return to the problem.
