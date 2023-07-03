@@ -1,0 +1,1 @@
+This is my current best solution to the problem 1805A "We Need the Zero", an 800 rated problem. My current solution has been accepted, and therefore I consider it to be complete. Of course, as always, if I can come up with a more efficient solution, I shall return to the problem.
