@@ -1,0 +1,1 @@
+This is my current best solution to the problem 1840C "Ski Resort", which is a 1000 rated problem. My current solution only passes test 1, and therefore needs to be revised. Therefore, this solution should be treated as still under construction.
