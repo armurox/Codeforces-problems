@@ -6,22 +6,21 @@ def main():
         k = int(k)
         later_acts = input().split()
         later_acts = [eval(i) for i in later_acts]
-        num_repeats = 0
-        num_moves = 0
         num_filled = 0
-        num_kicked = []
-        recent_acts = []
-        for i in later_acts:
-            if i not in recent_acts and num_filled < n:
-                recent_acts.append(i)
-                num_moves += 1
-                num_kicked.append(num_moves)
+        count = 1
+        num_kicked = {}
+        recent_acts = {}
+        for i, val in enumerate(later_acts):
+            if val not in recent_acts:
+                recent_acts[val] = 1
+                num_kicked[i + 1] = n - count
                 num_filled += 1
-            else:
-                num_moves += 1
-                
+            if num_filled == n:
+                break
+            count += 1
+        
         for _ in range(n - num_filled):
-            num_kicked.append(-1)
+            print(-1, end = " ")
         
         for i in reversed(num_kicked):
             print(i, end = " ")
