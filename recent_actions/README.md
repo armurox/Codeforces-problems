@@ -1,0 +1,1 @@
+This is my current solution to the problem 1800A "Is it a Cat?", which is an 800 rated problem. My current solution exceeds the time limit on test 2, so it is being revamped.
