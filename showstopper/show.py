@@ -6,16 +6,15 @@ def main():
         a = [eval(i) for i in a]
         b = input().split()
         b = [eval(i) for i in b]
-        max_a = max(a)
-        max_b = max(b)
-        max_val = max(max_a, max_b)
-        if (a[size - 1] < max_val and b[size - 1] < max_val):
+        max_a = max(a[:size - 1])
+        max_b = max(b[:size - 1])
+        if (orig_a[size - 1] >= max_b and orig_b[size - 1] >= max_a):
+            print("Yes")
+        elif (orig_b[size - 1] >= max_b and orig_a[size - 1] >= max_a):
+            print("Yes")
+        elif ()
+        else:
             print("No")
-        elif (b[size - 1] == max_val and a[size - 1] < sorted_b[size - ])
-    
-    
-    
-    
     
     
     
