@@ -1,4 +1,6 @@
+import time
 def main():
+    start = time.time()
     case_num: int = int(input())
     for _ in range(case_num):
         n, k = input().split()
@@ -28,8 +30,8 @@ def main():
         for i in reversed(num_moves_for_removed):
             print(i, end = " ")
         print()
-    
-    
+    end = time.time()
+    print(end - start)
     
     
     
