@@ -8,12 +8,14 @@ def main():
         b = [eval(i) for i in b]
         max_a = max(a[:size - 1])
         max_b = max(b[:size - 1])
-        if (b[size - 1] >= max_b and b[size - 1] >= max_a):
-            print("Yes")
-        elif (a[size - 1] >= max_b and a[size - 1] >= max_a):
-            print("Yes")
-        else:
-            print("No")
+        temp_arr = {a[i]:b[i] for i in range(size - 1)}
+        print(temp_arr)
+        # if (b[size - 1] >= max_b and b[size - 1] >= max_a):
+        #     print("Yes")
+        # elif (a[size - 1] >= max_b and a[size - 1] >= max_a):
+        #     print("Yes")
+        # else:
+        #     print("No")
     
     
     
