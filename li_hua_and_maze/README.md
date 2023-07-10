@@ -1,0 +1,1 @@
+This is my current best solution to the problem 1797A "Li Hua and Maze". My current solution has been accepted, and therefore I consider it to be complete. Of course, as always, if I can think of a more efficient solution, I shall return to the problem.
