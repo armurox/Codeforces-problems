@@ -1,1 +1,1 @@
-This is my current developing solution to the problem 1795A "Two Towers". It has passed test 1, but not test 2, so it is currently
+This is my current developing solution to the problem 1795A "Two Towers". It has passed test 1, but not test 2, so it is currently under development.
