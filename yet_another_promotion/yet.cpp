@@ -11,40 +11,16 @@ int main()
     {
         long long a, b, n, m;
         cin >> a >> b >> n >> m;
-        long long num_coins = 0;
-        long long min_coins;
-        if (m < n)
+        long long num_coins;
+        if (a * m <= b * (m + 1)) // Use promotion if this condition is true
         {
-            for (long long i = 0; i < n - m; i++)
-            {
-                min_coins = a * (m + i) + b * (n - m - i - 1);
-                
-                if (num_coins == 0)
-                {
-                    num_coins = min_coins;
-                }
-
-                else if (min_coins < num_coins)
-                {
-                    num_coins = min_coins;
-                }
-            }
-        }
-        
-        else if (b >= a && m >= n)
-        {
-            num_coins = a * n;
+            num_coins = (n / (m + 1)) * (a * m) + (n - ((n / (m + 1)) * (m + 1))) * min(a, b);
         }
 
-        else if (b < a && m >= n)
+        else
         {
-            num_coins = b * n;
+            num_coins = (n / (m + 1)) * (b * (m + 1)) + (n - (n / (m + 1)) * (m + 1)) * min(a, b);
         }
-
-        // else if (b >= a && n >= m)
-        // {
-        //     num_coins = a * (n - 1);
-        // }
 
         cout << num_coins << "\n";
     }
