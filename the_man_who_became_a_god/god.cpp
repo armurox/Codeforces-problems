@@ -25,7 +25,7 @@ int main()
         {
             while (num_groups < k - 1)
             {
-                
+                 
                 num_groups++;
             }
         }
