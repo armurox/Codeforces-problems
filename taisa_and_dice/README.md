@@ -1,1 +1,1 @@
-This is my current best solution to the problem 1790B "Taisa and Dice", which is an 800 rated problem. My current solution does not pass test case one, but there appears to be a problem in one of the test cases. Waiting for an update on this/
+This is my current best solution to the problem 1790B "Taisa and Dice", which is an 800 rated problem. My current solution does not pass test case one, but there appears to be a problem in one of the test cases. Waiting for an update on this.
