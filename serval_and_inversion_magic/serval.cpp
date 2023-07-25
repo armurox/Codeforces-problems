@@ -15,9 +15,19 @@ int main()
         scanf("%d", &size);
         char *arr = (char*) malloc(size + 1);
         scanf("%s", arr);
+        int no = 0;
         for (int j = 0; j < size / 2; j++)
         {
-            if 
+            if (arr[j] != arr[size - j - 1] && arr[j + 1] != arr[size - j - 2])
+            {
+                printf("NO\n");
+                no = 1;
+            }
+        }
+
+        if (!no)
+        {
+            printf("YES\n");
         }
         free(arr);
     }
