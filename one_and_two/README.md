@@ -1,0 +1,5 @@
+This is my current best solution to the problem 1788A "One and Two", which is an 800 rated problem. My current solution has been accepted, and hence I consider it to be complete. Of course, as always, if I can think of a more efficient solution, I shall return to the problem. 
+
+Problem statement: Given an array of integers containing only 1's and 2's, what is the minimum integer k such that the product of all the integers in the sequences that are 1-indexed less than or equal to k is the same as the product greater than k. Print -1 if no such k exists.
+
+Method: As ones do not affect the product, what we care about is the total number of twos, with the minimum k being the one that contains half the total number of twos (hence, if we have an odd number of twos, then k does not exist, and we print -1).
