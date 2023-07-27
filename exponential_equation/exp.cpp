@@ -19,7 +19,7 @@ int main()
 
         else
         {
-            
+            printf("%d %d\n", 1, n / 2);
         }
     }
 }
