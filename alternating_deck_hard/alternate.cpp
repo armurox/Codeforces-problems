@@ -17,15 +17,22 @@ int main()
         int num_greatest = floor((float) (-1 / 2) + sqrt(float(1/4) + (2 * n)));
         int double_sum = (2 * num_greatest) - 1;
         int amt_left = n - ((num_greatest *(num_greatest + 1)) / 2);
-        int a = 0;
+        int amt_left_b = 0;
+        int amt_left_a = 0;
         if (((double_sum - 1) % 8) != 0 && ((double_sum - 5) % 8) != 0)
         {
             double_sum = (2 * num_greatest) + 1;
             if ((double_sum - 1) % 8 == 0)
             {
-                a = 1;
+                amt_left_a = num_greatest;
+                amt_left_b = amt_left;
             }
-            amt_left += num_greatest;
+
+            else
+            {
+                amt_left_b = num_greatest;
+                amt_left_a = amt_left;
+            }
             double_sum = (2 * num_greatest) - 3;
         }
         printf("%d\n", double_sum);
@@ -35,9 +42,9 @@ int main()
         int a_sum;
         int white_a;
         int black_a;
-        if (((double_sum - 1) % 8) == 0 || a == 1)
+        if (((double_sum - 1) % 8) == 0)
         {
-            a_sum = (((double_sum - 1) / 8) + 1) * (1 + double_sum);
+            a_sum = (((double_sum - 1) / 8) + 1) * (1 + double_sum) + amt_left_a;
             white_a = ceil((float) a_sum / 2);
             black_a = a_sum - white_a;
             b_sum = n - a_sum;
@@ -47,7 +54,7 @@ int main()
 
         else
         {
-            b_sum = (((double_sum - 5) / 8) + 1) * (5 + double_sum);
+            b_sum = (((double_sum - 5) / 8) + 1) * (5 + double_sum) + amt_left_b;
             white_b = floor((float) b_sum / 2);
             black_b = b_sum - white_b;
             a_sum = n - b_sum;
