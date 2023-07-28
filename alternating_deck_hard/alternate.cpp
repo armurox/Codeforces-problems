@@ -36,6 +36,7 @@ int main()
             double_sum = (2 * num_greatest) - 3;
         }
         printf("%d\n", double_sum);
+        printf("%d\n", amt_left_b);
         int b_sum;
         int white_b;
         int black_b;
