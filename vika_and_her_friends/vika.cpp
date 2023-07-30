@@ -20,17 +20,17 @@ int main()
         int x, y;
         scanf("%d %d", &x, &y);
         int x_i, y_i;
-        int no = 0;
+        int yes = 0;
         for (int j = 0; j < k; j++)
         {
             scanf("%d %d", &x_i, &y_i);
             if ((abs(x - x_i) + abs(y - y_i)) % 2 == 1)
             {
-                    no = 1;
+                    yes = 1;
             }
         }
 
-        if (no)
+        if (!yes)
         {
             printf("NO\n");
         }
