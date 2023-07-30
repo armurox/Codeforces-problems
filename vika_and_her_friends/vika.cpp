@@ -24,7 +24,7 @@ int main()
         for (int j = 0; j < k; j++)
         {
             scanf("%d %d", &x_i, &y_i);
-            if (abs(x + 1 - x_i) + abs(y - y_i) == 1 && abs(x - x_i) + abs(y + 1 - y_i) == 1)
+            if ((abs(x - x_i) + abs(y - y_i)) % 2 == 1)
             {
                     no = 1;
             }
