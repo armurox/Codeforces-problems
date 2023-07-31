@@ -1,0 +1,5 @@
+This is my current best solution to the problem 178iA "Parallel Projection", which is an 800 rated problem. My current solution has been accepted, and hence I consider it to be complete. Of course, as always, if I can think of a more efficient solution, I shall return to the problem. 
+
+Problem statement: Given a rectangular parallelepiped (cuboid), what is the minimum length of rope that can be used to connect two points on the top and bottom of the cuboid, with length, width and height given.
+
+Method: To do this, you compute the minimum difference between the two points in addition to the constraint that one of the points must first be set to 0. You consider all four possibilities for this, store this in an array and then compute the minimum (best to use a higher level language like C++ or Python for this, with their built in minimum finding algorithms).
