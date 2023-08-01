@@ -29,7 +29,6 @@ int main()
             }
         }
         
-        int indices[3];
         int count = 0;
         if (num_odd >= 3)
         {
@@ -38,18 +37,14 @@ int main()
             {
                 if (arr[j] % 2)
                 {
-                    indices[count++] = j + 1;
+                    printf("%d ", j + 1);
+                    count++;
                 }
 
                 if (count == 3)
                 {
                     break;
                 }  
-            }
-
-            for (int i = 0; i < 3; i++)
-            {
-                printf("%d ", indices[i]);
             }
             printf("\n");
         }
@@ -63,13 +58,15 @@ int main()
             {
                 if (arr[j] % 2 && num_odd_count < 1)
                 {
-                    indices[count++] = j + 1;
+                    printf("%d ", j + 1);
+                    count++;
                     num_odd_count++;
                 }
 
                 else if (arr[j] % 2 == 0 && num_even_count < 2)            
                 {
-                    indices[count++] = j + 1;
+                    printf("%d ", j + 1);
+                    count++;
                     num_even_count++;
                 }
 
@@ -78,10 +75,6 @@ int main()
                     break;
                 }
 
-            }
-            for (int i = 0; i < 3; i++)
-            {
-                printf("%d ", indices[i]);
             }
             printf("\n");
         }
