@@ -1,0 +1,5 @@
+This is my current best solution to the problem 1780A "Hayato And School", which is an 800 rated problem. My current solution has been accepted, and hence I consider it to be complete. Of course, as always, if I can think of a more efficient solution, I shall return to the problem. 
+
+Problem statement: Given a string of size n, with each element containing a lamp which either shines to the left of the element(signified by an 'L') or to the right of the element (signified by an 'R'). Indicate if it is possible or not to swap any two lamps at most once such that every element is illuminated.
+
+Method: They key to this problem is to realize that any sequence containing LR or RL can be used to shine on all elements. The sequence LR needs to be swapped, while RL is already valid. Then, all that is left is to check for the existence of these two substrings in the string and their indices ( + 1, as the array is 0-indexed).
