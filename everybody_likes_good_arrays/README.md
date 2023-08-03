@@ -1,0 +1,5 @@
+This is my current best solution to the problem 1777A "Everybody Likes Good Arrays!", which is an 800 rated problem. My current solution has been accepted, and hence I consider it to be complete. Of course, as always, if I can think of a more efficient solution, I shall return to the problem. 
+
+Problem statement: Given an array of integers, make it such that every pair of consecutive integers does not contain the same parity. This can be done by repeatedly picking any pair, and replacing it with its product. What is the minimum number of moves required to achieve the not same parity?
+
+Method: The trick is to count the number of consecutive groups of same parity, and sum them up (-1), as all odd integers as a product will be odd, and similarly even. So, we keep doing this, until only distinct groups are left.
