@@ -1,0 +1,5 @@
+This is my current best solution to the problem 1778A "Flip Flop Sum", which is an 800 rated problem. My current solution has been accepted, and hence I consider it to be complete. Of course, as always, if I can think of a more efficient solution, I shall return to the problem. 
+
+Problem statement: Given an array of integers that are either 1 or -1, and that fact that you must change the sign of any two consecutive integers exactly once (of your choice), what is the maximum possible sum that can be obtained?
+
+Method: There are three possibilities that allow for a maximum sum. If -1, -1 exists in the array then they can both be flipped to increase the sum by 4. If it does not exist, but -1, 1 in any order exists, then the maximum sum is the current sum. Finally, if only 1's exist in the array, then the maximum sum will be the current sum, subtracted by 4.
