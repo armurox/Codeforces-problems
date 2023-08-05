@@ -31,7 +31,9 @@ int main()
             }
         }
 
-        if (1440 - arr[n - 1] >= 120)
+        int final_diff = 1440 - arr[n - 1];
+        int initial_diff = arr[0] - 0;
+        if (final_diff > 239 || initial_diff > 239)
         {
             printf("YES\n");
             continue;
@@ -51,6 +53,12 @@ int main()
 
         else
         {
+            if (final_diff < 240 && final_diff > 119)
+            {
+                printf("YES\n");
+                continue;
+            }
+
             for (int j = 1; j < n; j++)
             {
                 diff = arr[j] - arr[j - 1];
@@ -60,7 +68,7 @@ int main()
                 }
             }
 
-            if (second_max_diff < 120)
+            if (second_max_diff < 120 && final_diff < 120 && initial_diff < 120)
             {
                 printf("NO\n");
             }
