@@ -1,0 +1,5 @@
+This is my current best solution to the problem 1776A "Walking Boy", which is an 800 rated problem. My current solution has been accepted, and hence I consider it to be complete. Of course, as always, if I can think of a more efficient solution, I shall return to the problem. 
+
+Problem statement: Given a binary string array, can you ensure that the maximum absolute sum is obtained as you traverese the string choosing to add or subtract consecutive elements.
+
+Method: The key to this problem is to realize that 0's will not affect that absolute sum at all. In other words, the max sum is either 1 (if there are an odd number of 1's) and even otherwise. Hence, for every pair of consecutive 1's (ignoring in between 0's by always adding or subtracting them), if the sum is currently 1, then add a subtraction sign, otherwise and addition sign.
