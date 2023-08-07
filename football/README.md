@@ -1,0 +1,5 @@
+This is my current best solution to the problem 1773F "Football", which is an 800 rated problem. My current solution has been accepted, and hence I consider it to be complete. Of course, as always, if I can think of a more efficient solution, I shall return to the problem. 
+
+Problem statement: Given a number of matches, and the number of goals scored and conceded overall, what is the minimum number of draws, and print out a possible way in which this could occur.
+
+Method: The key is to realize (other than in the case of 1 match, where the goals are distributed exactly as written) that when the sum of the goals scored and conceded is greater than or equal to the number of matches, you will always have zero draws. This is because you can always distribute the goals such that one side scores some and the other scores 0. In the other cases, the number of draws will be the remainder of the number of matches subtracted from the number of goals scored, as you can use a greedy algorithm of distributing the goals in the form 1:0, 0: 1, until you are all out of goals. Then, you will be left with 0:0's.
