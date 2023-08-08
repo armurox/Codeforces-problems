@@ -1,0 +1,5 @@
+This is my current best solution to the problem 1772B "Matrix Rotation", which is an 800 rated problem. My current solution has been accepted, and hence I consider it to be complete. Of course, as always, if I can think of a more efficient solution, I shall return to the problem. 
+
+Problem statement: Given a 2x2 matrix of integers, is it possible to make it beautfiul by any set of 90 degree rotations? (Here, beauty is defined such that in every row the first element is smaller than the second, and similary for every column)
+
+Method: If it is possible by rotation to make the matrix beautiful, all that needs to be checked is that a constant relationship holds across columns and rows respectively i.e. if the first row first element is greater than the second, then the same must be true of the second. Additionally (independantly!) a constant relationship must also hold for the columns.
