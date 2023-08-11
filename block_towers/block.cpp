@@ -15,13 +15,11 @@ int main()
         cin >> n;
         // vector<int> nums;
         int count = 0;
-        string line;
-        getline(cin, line);
-        istringstream iss(line);
         long long num;
         long long first_num;
-        while (iss >> num)
+        for (int j = 0; j < n; j++)
         {
+            cin >> num;
             count += 1;
             if (count == 1)
             {
@@ -32,12 +30,12 @@ int main()
             {
                 if ((num - first_num) % 2 == 0)
                 {
-                    first_num += (num - first_num);
+                    first_num += ((num - first_num) / 2);
                 }
 
                 else
                 {
-                    first_num += (num - first_num) - 1;
+                    first_num += ((num - first_num) / 2) + 1;
                 }
                 
             }
