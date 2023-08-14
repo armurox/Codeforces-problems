@@ -9,7 +9,7 @@ int main()
     {
         int n;
         scanf("%d", &n);
-        char *s = malloc(sizeof(char) * n);
+        char *s = calloc(n + 1, sizeof(char));
         scanf("%s", s);
         int curr_double = 0;
         int prev_double = 1;
