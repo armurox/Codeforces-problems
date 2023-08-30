@@ -14,21 +14,31 @@ int main()
         cin >> n;
         string word;
         cin >> word;
-        int x = count(word.begin(), word.end(), '1');
-        int y = count(word.begin(), word.end(), '0');
-        int num_breaks = 0;
-        size_t pos = 0;
-        string substr = "10";
-        while ((pos = word.find(substr, pos)) != string::npos) {
-          ++num_breaks;
-          pos += substr.length();
-   }
-        // Max cost
-        int max_cost = (x > y) ? x * x : y * y;
-        if (num_breaks > 1)
+        long long num_ones = 0;
+        long long num_zeros = 0;
+        long long x = 0;
+        long long y = 0;
+        for (int j = 0; j < n; j++)
         {
-            max_cost = x * y;
+            if (word[j] == '1')
+            {
+                num_zeros = 0;
+                num_ones++;
+            }
+
+            else
+            {
+                num_ones = 0;
+                num_zeros++;
+            }
+            x = max(x, num_ones);
+            y = max(y, num_zeros);
         }
+        // Max cost
+        long long max_cost = (x > y) ? x * x : y * y;
+        x = count(word.begin(), word.end(), '1');
+        y = count(word.begin(), word.end(), '0');
+        max_cost = max(max_cost, x * y);
         cout << max_cost << "\n";
     }
 }
