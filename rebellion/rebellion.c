@@ -10,27 +10,25 @@ int main()
         int n;
         scanf("%d", &n);
         int num_moves = 0;
-        int *arr = malloc(sizeof(int) * n);
+        int num_zeros;
+        int num_ones;
+        int unordered;
+        int curr_num;
         for (int j = 0; j < n; j++)
         {
-            scanf("%d", arr + j);
-        }
-
-        for (int j = 0; j < n; j++)
-        {
-            for (int k = 0; k < n; k++)
+            scanf("%d", &curr_num);
+            if (curr_num == 1)
             {
-                if (arr[j] > arr[n - 1 - k] && n - 1 - k > j)
-                {
-                    arr[n - 1 - k] = arr[j];
-                    num_moves++;
-                    k++;
-                    break;
-                }
+                num_ones++;
+                unordered = 1;
+            }
+
+            else if (curr_num == 0 && unordered == 1)
+            {
+                num_zeros++;
             }
         }
 
         printf("%d\n", num_moves);
-        free(arr);
     }
 }
