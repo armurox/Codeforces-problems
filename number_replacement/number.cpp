@@ -20,16 +20,27 @@ int main()
         for (int j = 0; j < n; j++)
         {
             cin >> num;
-            if (nums.count(num))
+            if (nums.find(num) != nums.end())
             {
                 nums[num].push_back(j);
             }
 
             else
             {
-                nums.emplace(make_pair(num, j));
+                nums.insert(make_pair(num, vector<int> {j}));
             }
         }
+
+        //  for (auto it = nums.begin(), end = nums.end(); it != end; ++it)
+        //  {
+        //     cout << it -> first << " ";
+        //     for (auto it_2 = (it -> second).begin(); it_2 != (it -> second).end(); ++it_2)
+        //     {
+        //         cout << *it_2 << " ";
+        //     }
+        //     cout << "\n";
+            
+        //  }
 
         string word;
         cin >> word;
@@ -37,10 +48,10 @@ int main()
         int yes = 1;
         for (auto it = nums.begin(), end = nums.end(); it != end; ++it)
         {
-            curr_letter = word[(it -> second)[0]];
-            for (auto it_2 = (it -> second).begin(); it_2 != (it -> second).end(); ++it)
+            curr_letter = word.at(*it -> second.begin());
+            for (auto it_2 = (it -> second).begin(); it_2 != (it -> second).end(); ++it_2)
             {
-                if (word[(*it_2)] != curr_letter && yes)
+                if (word.at((*it_2)) != curr_letter && yes)
                 {
                     cout << "NO\n";
                     yes = 0;
