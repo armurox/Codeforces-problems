@@ -31,17 +31,6 @@ int main()
             }
         }
 
-        //  for (auto it = nums.begin(), end = nums.end(); it != end; ++it)
-        //  {
-        //     cout << it -> first << " ";
-        //     for (auto it_2 = (it -> second).begin(); it_2 != (it -> second).end(); ++it_2)
-        //     {
-        //         cout << *it_2 << " ";
-        //     }
-        //     cout << "\n";
-            
-        //  }
-
         string word;
         cin >> word;
         char curr_letter;
