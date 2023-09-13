@@ -1,18 +1,18 @@
 class Shirt():
-    def __init__(self, size):
+    def __init__(self, size: str):
         self.size = size
     
-    def __gt__(self, other):
+    def __gt__(self, other) -> bool:
         return (('L' in self.size and 'L' not in other.size) or 
         (self.size.count('X') > other.size.count('X') and 'L' in self.size) or
         ('M' in self.size and 'S' in other.size) or
         (self.size.count('X') < other.size.count('X') and 'S' in other.size))
         
-    def __eq__(self, other):
+    def __eq__(self, other) -> bool:
         return (self.size == other.size)
 
 def main():
-    cn = int(input())
+    cn: int = int(input())
     for _ in range(cn):
         a, b = map(Shirt, input().split())
         if a == b:
