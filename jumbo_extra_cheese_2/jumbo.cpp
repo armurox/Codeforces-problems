@@ -21,20 +21,23 @@ int main()
             per += 2 * min(a, b);
             maxs.push_back(max(a, b));
         }
-
+        if (n == 1)
+        {
+            per += 2 * maxs.at(0);
+            continue;
+        }
         sort(maxs.begin(), maxs.end());
 
-        for (int j = 0; j < n; j++)
+        for (int j = 0; j < n - 1; j++)
         {
-            if (j < 2)
+            if (j < 2 || j == n - 1)
             {
                 per += maxs.at(j);
             }
-            else
-            {
-                per += (maxs.at(j) - maxs.at(j - 2)) + (maxs.at(j) - maxs.at(j - 1));
-            }      
+
+            per += maxs.at(j + 1) - maxs.at(j);
         }
+
 
         cout << per << "\n";
     }
