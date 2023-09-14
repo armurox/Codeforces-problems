@@ -1,0 +1,8 @@
+# Problem 1740B "Jumbo Extra Cheese 2"
+This is my current best solution to the problem 1740B "Jumbo Extra Cheese 2", which is an 800 rated problem. My current solution has been accepted, and hence I consider it to be complete. Of course, as always, if I can think of a more efficient solution, I shall return to the problem. 
+
+## Problem statement
+Given a collection of integer pairs, that represent the height and width of a collection of rectangle, determine the minimum possible perimter that can be obtained by setting the rectangles of the x y plane, with the rectangle's edges parallel to the axes and the bottom part of the rectangles touching the x-axis. Additionally, the rectangles can touch, but not overlap.
+
+## Method
+The main idea is to minimize the exposed sides of the shapes. So, we aim to set the triangles such that they are standing up with their width facing the x-axis and their height the y-axis. In this way, the perimiter has a lower bound of 2 * (width_sum). Then, we can arrange the rectangles however we choose, I chose to arrange them in ascending height order, with every pair of rectangles touching, so the perimeter is minimized. The way this translates to the code is to sum up the minimum of the two integer values, and store the maximum in a vector. We then sort the vector (to minimize exposure of each rectangle along the height). Then, summing up the vector components (with every adjacent component being subtracted from the one ahead) and adding to the current sum gives you the minimum perimeter.
