@@ -71,6 +71,8 @@ int main()
             }
         }
 
+        delete[] arr_1;
+        delete[] arr_2;
         (invalid) ? cout << diff + 1 << "\n" : cout << diff << "\n";
     }
 }
