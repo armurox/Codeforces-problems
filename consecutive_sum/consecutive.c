@@ -11,8 +11,8 @@ int main()
         scanf("%d%d", &n, &k);
         long long max_sum = -1;
         long long sum = 0;
-        int _break = 0;
         long long *sum_arr = malloc(sizeof(long long) * k);
+        long long prev_num;
         int ind;
         for (int j = 0; j < n; j += k)
         {
@@ -29,13 +29,12 @@ int main()
 
                 if (l == n)
                 {
-                    _break = 1;
                     break;
                 }
                 sum -= sum_arr[ind];
+                prev_num = sum_arr[ind];
                 scanf("%lld", sum_arr + ind);
                 sum += sum_arr[ind];
-                ind++;
                 if (sum > max_sum)
                 {
                     max_sum = sum;
@@ -44,16 +43,14 @@ int main()
                 else
                 {
                     sum = max_sum;
+                    sum_arr[ind] = prev_num;
                 }
+                ind++;
             }
 
             if (j == 0)
             {
                 max_sum = sum;
-            }
-            if (_break)
-            {
-                break;
             }
         }
         
