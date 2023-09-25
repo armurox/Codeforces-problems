@@ -26,7 +26,7 @@ int main()
         for (int j = 0; j < n; j++)
         {
             num_moves += (nums[j] / (threshold - 1));
-            if (nums[j] - ((nums[j] / (threshold - 1)) * (threshold - 1)) == 0)
+            if (nums[j] % (threshold - 1) == 0)
             {
                 num_moves--;
             }
