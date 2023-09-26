@@ -18,6 +18,5 @@ def main():
         print(min_cost)
         
     
-    
 if __name__ == "__main__":
     main()
