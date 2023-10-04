@@ -1,1 +1,1 @@
-This is my current best solution to the problem 1828A Divisible Array. The current solution has been acceptedand therefore I consider the problem to be complete. Of course, as always, I may come back to try to an improve the problem if I come up with a more efficient solution.
+This is my current best solution to the problem 1828A Divisible Array. The current solution has been acceptedand therefore I consider the problem to be complete. Of course, as always, I may come back to try to an improve the problem if I come up with a more efficient solution. 
