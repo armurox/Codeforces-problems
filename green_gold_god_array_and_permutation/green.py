@@ -19,7 +19,6 @@ def main():
             print(perm, end = " ")
         print()
         
-    
 
 if __name__ == "__main__":
     main()
