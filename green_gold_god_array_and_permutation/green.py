@@ -7,13 +7,14 @@ def main():
         p = {}
         temp.sort(reverse = True)
         count = 1
+        
         for elem in temp:
             if elem in p:
                 p[elem].append(count)
             else:
                 p[elem] = [count]
             count += 1
-        
+            
         for elem in a:
             perm = p[elem].pop()
             print(perm, end = " ")
