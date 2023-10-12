@@ -10,16 +10,7 @@ int main()
         int a, b, c;
         scanf("%d%d%d", &a, &b, &c);
         int first = abs(a - 1);
-        int second = 0;
-        if (c == 1)
-        {
-            second = (abs(b - c));
-        }
-
-        else
-        {
-            second = abs(b - c) + abs(c - 1);
-        }
+        int second = abs(b - c) + abs(c - 1);
 
         if (first < second)
         {
