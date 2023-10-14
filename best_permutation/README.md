@@ -1,0 +1,8 @@
+# Problem 1728B "Best Permutation"
+This is my current best solution to the problem 1728B "Best Permutation", which is an 800 rated problem. My current solution has been accepted, and hence I consider it to be complete. Of course, as always, if I can think of a more efficient solution, I shall return to the problem. 
+
+## Problem statement
+Given an integer n, find the permutation from 1 to n that produces the maximum value x, where x loops through the permutation, starting at 0, and x = p_i if p_i > x else x = 0.
+
+## Method
+The main idea behind this method is to have the last two integers produce x, being n - 1 and n. This is the maximum possible sum, as if one were to conisder a. more integers, then the sum would end up being n, as n is the last digit, and therefore, by the time x gets to n, it must be true that x < n, else the sum would hit 0. The largest number for which this is true is n - 1. Now, to ensure that x = 0 by the time it reaches the second last element, we consider the case of having an even n and an odd n. In the case of an even n, we merely put all the elements in decrease order before n - 1, starting at n - 2 and going down to 1, as every pair of elements in the decreasing array will set x = 0. In the case of the odd array, a solution could be to start at 1, so that the first pair of digits does not set x = 0, and after that have all the digits decreasing, to ensure that x = 0 by the time it reaches x = n - 1.
