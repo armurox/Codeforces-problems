@@ -1,0 +1,8 @@
+# Problem 1715A "Crossmarket"
+This is my current best solution to the problem 1715A "Crossmarket", which is an 800 rated problem. My current solution has been accepted, and hence I consider it to be complete. Of course, as always, if I can think of a more efficient solution, I shall return to the problem. 
+
+## Problem statement
+Given two integers n and m, which represent an n * m grid, determine the minimum number of moves that it takes two people to move from their origin to their goal. One of the players starts at the top left corner and the other at the bottom left. The top left corner player must move to the bottom right, and the bottom left player must move to the top right. As the bottom left player moves, they create portals, such that if any player touches the portal, they can move to any other square with a portal.
+
+## Method
+The second player must pick the shortest path (they do not get any portal advantage, as that would require them to backtrack on their own path, which increases the number of moves). Let the secnd player move from the bottom left to the top right, straight and then across. This makes their total number of moves m - 1 + n - 1. Then, the first player moves to (1, m), which now contains a portal, and uses that to teleport to (m, n). The total numer of moves for the first player is m - 1 + 1 = m. The total number of moves is therefore 2m + n - 2. There is one special case to consider. When n and m are both 1 then the minimum number of moves is 0, as both players are already at their respective destination (it is their starting square, which is also their ending square).
