@@ -19,7 +19,7 @@ def main():
             nums.append(s - _s)
         for num in reversed(nums):
             print(num, end="")
-        print()
+        print
     
     
 if __name__ == "__main__":
