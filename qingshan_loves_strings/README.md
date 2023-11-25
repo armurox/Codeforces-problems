@@ -1,0 +1,8 @@
+# Problem 1890B "Qingshan Loves Strings"
+This is my current best solution to the problem 1890B "Permutation Chain", which is an 800 rated problem. My current solution has been accepted, and hence I consider it to be complete. Of course, as always, if I can think of a more efficient solution, I shall return to the problem. 
+
+## Problem statement
+Given two binary strings, s and t, determine if s can be made good. Here, good is defined as every character alternating between 0 and 1. The allowed operation on s is to insert t into it at any point, and as many times as you wish.
+
+## Method
+There are a few cases to check. First, the trivial case. If s is already good, then it is clearly possible to make it good. If s is not good, then the only way to make it good is to insert t into all the locations where the character of s do not alternate between 0 and 1. In order for this to make s good, t must satisfy some constraints. First, t must itself be good (if it is not, then the problem becomes infinitely recursive, inserting t into its location in itself trying to make it good), and second, the first and last element of t must be different from the two characters of s between which t is being inserted (more precisely, the first character of t must be different from the first of the two s characters, and the last character of t must be different from the second of the two characters). In order to implement this, I stored the indices of the starting character of s where t must be inserted in a vector (in c++, the equivalent would be a list in python), and then looped through the vector, making sure that the starting and final characters of t satisfied those conditions on those locations.
