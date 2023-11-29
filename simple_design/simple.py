@@ -4,18 +4,20 @@ def main():
         x, k = input().split()
         k = int(k)
         temp = list(map(int, list(x)))
+        temp_1 = temp.copy()
+        temp_1[-1] -= temp_1[-1]
+        ans = 0
         x = int(x)
-        _sum = sum(temp)
-        amt_to_add = k - _sum % k
-        if amt_to_add == k:
+        curr_sum = sum(temp)
+        sec_sum = sum(temp_1) + 1
+        curr_amt = curr_sum % k
+        amt_to_add = k - curr_amt
+        if curr_amt == 0:
             print(x)
-        elif len(temp) == 1 and temp[-1] + amt_to_add >= 10:
-            print(10 + k - 1)
-        elif (temp[-1] + amt_to_add >= 10):
-            print(x + 10 - (_sum % k) - 1)
-        else:
+        elif (temp[-1] + amt_to_add < 10):
             print(x + amt_to_add)
-        
+        else:
+            print(x - temp[-1] + 10 + (k - sec_sum % k))
 
 if __name__=="__main__":
     main()
