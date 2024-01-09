@@ -5,4 +5,4 @@ This is my current best solution to the problem 1919B "Plus-Minus Split", which 
 Given a string s, which is a sequence of $+$ and $-$, representing $1$ and $-1$ respectively, determine the minimum penatly which is the sum of the penalties of sub-strings that can be picked where a penatly of a substring is its absolute sum multiplied by its length.
 
 ## Method
-This problem is relatively easy once you realize that splitting the string into substrings will either keep the penalty the same or increase it (due to the length multiplier), hence one merely has to compute the penalty sum as you loop through the array (and the length is one), and that will be the minimum penalty. 
+This problem is relatively easy once you realize that splitting the string into substrings will either keep the penalty the same or increase it (due to the length multiplier), hence one merely has to compute the penalty sum as you loop through the array (and the length is one), and that will be the minimum penalty.
