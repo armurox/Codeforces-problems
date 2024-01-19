@@ -1,0 +1,8 @@
+# Problem 1920A "Satisfying Constraints"
+This is my current best solution to the problem 1920A "Satisfying Constraints", which is an 800 rated problem. My current solution has been accepted, and hence I consider it to be complete. Of course, as always, if I can think of a more efficient solution, I shall return to the problem. 
+
+## Problem statement
+You are given a sequence of integer pairs a and x, representing a series of constraints on an integer k you are allowed to produce. If a is 1 or 2, then the possible k's are forced to be greater than or equal to and less than or equal to x respectively, and if a is 3, then the possible k's are not allowed to be equal to x. Determine the number of possible k's that can be produced. You may assume that the constraints enfore a finite number of possible k's.
+
+## Method
+Looping through the inputs, if any of the inputs is 1, find the maximum value of x associated with the 1 constraints, as that become the allowed minimum on the possible k's. Similarly if any of the inputs is 2, find the minimum value, as that becomes the maximum possible k value. Then, number of valid integers becomes max - min + 1 (as long as max is greater than or equal to min, otherwise there are no possible k's). Finally, collect all the a = 3 cases in an array, and loop through them, making sure that the x terms are between the maximum and minimum value, and then subtract of that number from the number valid. This gives the final number of possible k's.
