@@ -1,0 +1,8 @@
+# Problem 1921C "Sending Messages"
+This is my current best solution to the problem 1921C "Sending Messages", which is a 900 rated problem. My current solution has been accepted, and hence I consider it to be complete. Of course, as always, if I can think of a more efficient solution, I shall return to the problem. 
+
+## Problem statement
+A person wants to send a sequence of messages in an array of moments without his phone running out of charge. Given 4 in integers n, f, a, b where n represents the number of moments, f represents the initial charge of the phone, a represents charge lost per unit time and b represents charge lost in turning a phone off an on, determine if his goal is possible. You are also given the actual moments array, where each moment represents the number of units of time passed since moment 0.
+
+## Method
+The easiest way to run with this problem is to greedily compute the minimum charge consumption possible. To do that, start by setting the minimum charge to 0, and then compute the units of time used up between consecutive moments, and multiply it by the charge per unit time, to find how much charge would be used up if the phone was on between those two moments. If this value is greater than or equal to the charge used up from turning the phone off and then on between moments, simply add the on-off charge to the minimum charge used, add on the computed value. Looping through the whole moment's array to do this will give you the minimun possible charge consumption. If it exceeds or is equal to the initial charge of the phone, then the goal cannot be achieved, otherwise it can.
