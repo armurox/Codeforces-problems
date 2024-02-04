@@ -5,4 +5,4 @@ This is my current best solution to the problem 1915A "Odd One Out", which is an
 Given 3 integers a, b and c, where 2 are equal and 1 is not, print out the odd one out.
 
 ## Method
-Use 3 decision statements, if a and b are equal, then c is unequal, if a and c are equal, then then b is unequal and if b and c are equal then a is unequal.
+Use 3 decision statements, if a and b are equal, then c is unequal, if a and c are equal, then then b is unequal and if b and c are equal then a is unequal. 
