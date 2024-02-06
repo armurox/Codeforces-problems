@@ -1,0 +1,8 @@
+# Problem 1898A "Milica and String"
+This is my current best solution to the problem 1898A "Milica and String", which is an 800 rated problem. My current solution has been accepted, and hence I consider it to be complete. Of course, as always, if I can think of a more efficient solution, I shall return to the problem. 
+
+## Problem statement
+Given two integer n and k, and a string of one A's and B's, determine the minimum number of moves (and what the moves are), to convert the given string so that it has k number of B's (Note: n is the length of the string itself). A move is picking an index $i$ in the array, and a character $c$, which is either A or B, such that all characters from $1 \leq i$ (where we consider the string to be 1 indexed) are converted into $c$.
+
+## Method
+At most 1 move will be required, as one can always find an appropriate index to increase or decrease the number of B's by the appropriate amount. At that point, the problem gets split into three cases, the first being where the number of B's is already equal to k. In that situation, no moves are required. The second case to consider is when the number of B's is less than k. In that case, one can loop through the array, converting every non-B into a B, and incrementing the count of the number of B's by 1. The moment the number of B's becomes equal to k, one can print out the current index (and the letter associated with it being B), as that is a conversion of all the letters before and upto the index being converted to B. The final case is when the number of B's is greater than k. In this situation we do the same as the second case, but instead with a, and decrementing the number of B's instead of increasing them (as replacing B's with A's is the same as removing B's.)
