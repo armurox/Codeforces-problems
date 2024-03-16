@@ -20,57 +20,60 @@ int main(void)
             robs.push_back(cell);
         }
 
-        int num_r = 0;
-        int num_c = 0;
-        int curr_pos = 0;
-        int max_num = max(n, m);
-        bool no = true;
-        while (curr_pos < max_num)
+        int first_r = -1;
+        bool no = false;
+        bool found = false;
+        for (int j = 0; j < n; j++)
         {
-            if (robs[curr_pos][curr_pos] == 'R')
+            for (int k = 0; k < m; k++)
             {
-                cout << "YES\n";
-                no = false;
-                break;
-            }
-
-            if (num_r > 0 && num_c > 0)
-            {
-                num_r = 0;
-                num_c = 0;
-                curr_pos++;
-                continue;
-            }
-
-            else if ((num_r > 0 && num_c == 0) || (num_r == 0 && num_c > 0))
-            {
-                cout << "YES\n";
-                no = false;
-                break;
-            }
-
-            for (int j = curr_pos; j < n; j++)
-            {
-                if (robs[curr_pos][j] == 'R')
+                if (robs[j][k] == 'R')
                 {
-                    num_r++;
+                    first_r = k;
+                    found = true;
+                    break;
                 }
             }
 
-            for (int j = curr_pos; j < n; j++)
+            if (found)
             {
-                if (robs[j][curr_pos] == 'R')
-                {
-                    num_c++;
-                }
+                break;
             }
-
-            curr_pos++;
         }
 
-        if (no)
+        if (first_r == 0)
+        {
+            cout << "YES\n";
+            continue;
+        }
+
+        else if (first_r == -1)
         {
             cout << "NO\n";
+            continue;
+        }
+
+        for (int k = first_r - 1; k > -1; k--)
+        {
+                for (int j = 0; j < n; j++)
+                {
+                    if (robs[j][k] == 'R')
+                    {
+                        cout << "NO\n";
+                        no = true;
+                        break;
+                    }
+                }
+
+                if (no)
+                {
+                    break;
+                }
+            }
+        
+        if (!no)
+        {
+            cout << "YES\n";
         }
     }
 }
