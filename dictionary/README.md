@@ -5,4 +5,4 @@ This is my current best solution to the problem 1674B "Dictionary", which is an 
 Given a two letter word, representing a language in which words have only two lowercase letters that are distinct, determine it's index in the dicionary.
 
 ## Method
-Import in a list of lowercase ascii letters, then multiply the first element by 25 times its index in the dicitonary, and on the on the second letter. If the second letter occurs before the first, subtract one, due to the distinct constraint that is enforced. 
+Import in a list of lowercase ascii letters, then multiply the first element by 25 times its index in the dicitonary, and on the on the second letter. If the second letter occurs before the first, subtract one, due to the distinct constraint that is enforced.
