@@ -1,0 +1,6 @@
+5
+aba
+abc
+cba
+n
+codeforces
