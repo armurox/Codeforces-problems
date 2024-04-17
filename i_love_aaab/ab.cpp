@@ -29,3 +29,4 @@ int main(void)
             cout << "YES\n";
     }
 }
+
