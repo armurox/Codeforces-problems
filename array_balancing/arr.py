@@ -8,7 +8,9 @@ def main():
         for i in range(n - 1):
             first_ans = abs(a[i] - a[i + 1])
             second_ans = abs(a[i] - b[i + 1])
-            if second_ans < first_ans:
+            third_ans = abs(b[i] - a[i + 1])
+            fourth_ans = abs(b[i] - b[i + 1])
+            if second_ans + third_ans < first_ans + fourth_ans:
                 _sum += second_ans
                 a[i + 1], b[i + 1] = b[i + 1], a[i + 1]
                 _sum += abs(b[i] - b[i + 1])
