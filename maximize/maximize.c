@@ -14,4 +14,3 @@ int main(void)
         printf("%d\n", x - 1);
     }
 }
-
