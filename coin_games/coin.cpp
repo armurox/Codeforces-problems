@@ -14,15 +14,28 @@ int main(void)
         cin >> n;
         string s;
         cin >> s;
-        if (count(s.begin(), s.end(), 'U') % 3)
+        bool is_pos = false;
+        if (n > 2)
         {
-            cout << "NO\n";
+            for (int j = 0; j < n; j++)
+            {
+                if (s[j] == 'U')
+                {
+                    if (s[(j + 1) % n] == 'U' || s[(j - 1) % n] == 'U')
+                    {
+                        is_pos = true;
+                        break;
+                    }
+                }
+            }
         }
 
-        else
+        else if (s == "UD" || s == "DU" || s == "U")
         {
-            cout << "YES\n";
+            is_pos = true;
         }
-
+        
+        string ans = is_pos ? "YES\n" : "NO\n";
+        cout << ans;
     }
 }
