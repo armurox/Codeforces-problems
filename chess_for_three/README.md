@@ -1,5 +1,5 @@
 # Problem 1973A "Chess for three"
-This is my current best solution (after looking at the editorial) to the problem 1973A "Chess for three", which is a 900 rated problem. I foud the O(1) solution in the editorial to be particularly interesting, and worth explaining, since I found it quite confusing, so I would like to explain it here.
+This is my current best solution (after looking at the editorial) to the problem 1973A "Chess for three", which is a 900 rated problem. I found the O(1) solution in the editorial to be particularly interesting, and worth explaining, since I found it quite confusing initially, so I would like to explain it here.
 
 ## Problem statement
 Three friends play some ($0$ or more) games of chess together. In any one game, the three friends can either win, lose, or draw, which is worth $2$, $0$ and $1$ point respectively. You are given their final score at the end, with the number $p_1, p_2, p_3$, where it is guaranteed that $p_1 \leq p_2 \leq p_3$. Print $-1$ if the set of scores is not possible from playing games, otherwise find the maximum number of draws possible from this game.
