@@ -15,6 +15,7 @@ def main():
             
         print("YES\n" + s if 'B' in s else "NO")
                 
-    
+
+
 if __name__ == "__main__":
     main()
