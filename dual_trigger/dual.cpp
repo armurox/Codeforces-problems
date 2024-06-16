@@ -21,7 +21,6 @@ int main(void)
                 num_ones++;
             }
         }
-
         string ans = (num_ones % 2 || (num_ones == 2 && (l.find("11") != string::npos))) ? "NO\n" : "YES\n";
         cout << ans;
     }
