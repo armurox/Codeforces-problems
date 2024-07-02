@@ -11,3 +11,4 @@ int main(void)
         printf("%s\n", (y < -1 ) ? "NO" : "YES");
     }
 }
+
