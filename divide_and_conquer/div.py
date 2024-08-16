@@ -18,6 +18,6 @@ def main():
                 min_num_moves = num_moves
         print(min_num_moves)
 
-    
+
 if __name__ == "__main__":
     main()
