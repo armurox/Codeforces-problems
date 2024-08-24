@@ -11,3 +11,4 @@ int main(void)
         printf("%d\n", n / 4 + (n % 4) / 2);
     }
 }
+
