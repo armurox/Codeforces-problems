@@ -14,3 +14,4 @@ int main(void)
         printf("%d\n", num_odds / 2);
     }
 }
+
