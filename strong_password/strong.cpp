@@ -21,7 +21,7 @@ int main(void)
                 break;
             }
 
-            else if (s[j] == s[j + 1] && s[j])
+            else if (s[j] == s[j + 1])
             {
                 s = s.substr(0, j + 1) + "a" + s.substr(j + 1, size - j - 1);
                 found = true;
