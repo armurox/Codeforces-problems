@@ -10,7 +10,7 @@ def main():
             a_n.append(temp)
         for i in range(0, n, k):
             a_k.append([])
-            for j in range(0, n, k):
+            for j in range(0, n, k)
                 a_k[count].append(a_n[i][j])
             count += 1
         for elem in a_k:
@@ -19,3 +19,4 @@ def main():
     
 if __name__ == "__main__":
     main()
+
