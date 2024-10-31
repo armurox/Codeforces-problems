@@ -6,4 +6,3 @@ Given two integers $a$ anc $b$ determine if it is possible to open a bank accoun
 
 ## Method
 The numbers can be at most their difference apart from one another, due to the reduction by $1$ overall reducing the difference by $1$. In other words, the minimal condition is that $a > b - a$ must hold true. In that case, the answer is simply $a - (b - a)$ and if $a > b$ the answer is simply $b$. Otherwise the answer is $0$.
-
