@@ -6,3 +6,4 @@ You are given an integer n. Determine the length of the maximum possible permuta
 
 ## Method
 The easiest way to get a strictly decreasing permutation chain is to start with an ordered permutation (from 1 to n), and swap the first element forward by 1 each time. This strictly decreases the number of fixed points by 1 each time, until the 1 has reached the end. Then, it is only possible to keep the fixed point either the same or increase them (as the number of fixed pointd will have hit 0). The length of this permutation chain is precisely n.
+\
