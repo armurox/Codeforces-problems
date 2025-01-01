@@ -4,14 +4,9 @@ def main():
     for _ in range(t):
         n = int(input())
         a = list(map(int, input().split()))
-        a_set = set(a)
-        used_set = set()
-        temp_used = set()
+        used_set = set() 
         final_list = []
         for i in range(n):
-            if used_set == a_set:
-                used_set = set()
-                temp_used = set()
             if a[i] in used_set:
                 temp_num = random.randint(1, n)
                 while temp_num in used_set:
