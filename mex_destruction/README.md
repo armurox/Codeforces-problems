@@ -6,4 +6,3 @@ Given an array $a$ of non-negative integers, determine the number of operations 
 
 ## Method
 The maximum number of operations is $2$, as, in the worst case you have an array of not all zeros, sepearated by zeros which you convert into all non-zeros, and with one more move into all zeros. Thereforce, loop through teh array, counting through th number of distinct consecutive non-zero groups. If these are less then $2$, print that number, otherwise print $2$.
-
