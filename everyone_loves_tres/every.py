@@ -7,7 +7,7 @@ def main():
         elif n % 2:
             for _ in range(n - 5):
                 print(3, end="")
-            print(3633)
+            print(36366)
         else:
             for _ in range(n - 2):
                 print(3, end="")
@@ -17,3 +17,4 @@ def main():
     
 if __name__ == "__main__":
     main()
+
