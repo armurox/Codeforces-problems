@@ -1,0 +1,13 @@
+6
+2 2 2
+NE
+3 2 2
+NNE
+6 2 1
+NNEESW
+6 10 10
+NNEESW
+3 4 2
+NEE
+4 5 5
+NEWS
