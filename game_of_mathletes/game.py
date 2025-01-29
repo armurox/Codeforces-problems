@@ -3,15 +3,19 @@ def main():
     for _ in range(t):
         n, k = map(int, input().split())
         a = list(map(int, input().split()))
-        a_set = set()
+        a_map = {}
         score = 0
         for elem in a:
-            if elem in a_set:
+            if elem in a_map:
                 score += 1
-                a_set.remove(elem)
-                # print(elem, k - elem)
+                a_map[elem] -= 1
+                if a_map[elem] == 0:
+                    del a_map[elem]
             else:
-                a_set.add(k - elem)
+                if k - elem in a_map:
+                    a_map[k - elem] += 1
+                else:
+                    a_map[k - elem] = 1
         print(score)
     
     
