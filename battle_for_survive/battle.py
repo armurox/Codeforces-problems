@@ -10,7 +10,7 @@ def main():
         except (IndexError, TypeError):
             pass
         print(a[-1] - result)
-    
-    
+
+
 if __name__ == "__main__":
     main()
