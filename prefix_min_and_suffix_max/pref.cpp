@@ -28,14 +28,7 @@ int main(void)
         int min_value{*min_it};
         for (int j = 0; j < n; j++)
         {
-            if (v[j] == min_value || v[j] == max_value)
-                s += "1";
-            else if (j == 0 && v[j] < v[n - 1])
-                s += "1";
-            else if ( j == n - 1 && v[0] < v[j])
-                s += "1";
-            else
-                s += "0";
+            s += ((j == 0 || j == n - 1 || v[j] == min_value || v[j] == max_value) ? "1" : "0");
         }
 
         cout << s << '\n';
