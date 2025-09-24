@@ -12,7 +12,8 @@ def main():
             if a[i] > prev:
                 count += 1
                 result.append(i + 1)
-            prev = a[i]
+            else:
+                prev = a[i]
         print(count)
         for elem in result:
             print(elem, end=' ')
