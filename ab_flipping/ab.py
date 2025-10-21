@@ -10,7 +10,10 @@ def main():
                 first_a_index = i
             if s[i] == 'B':
                 last_b_index = i
-        print(max(last_b_index - first_a_index, 0))
+        if first_a_index != -1 and last_b_index != -1:
+            print(max(last_b_index - first_a_index, 0))
+        else:
+            print(0)
                 
     
     
