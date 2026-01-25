@@ -30,4 +30,3 @@ def find_lexicographically_smaller(a, b):
 
 if __name__ == "__main__":
     main()
-
