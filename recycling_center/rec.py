@@ -4,21 +4,15 @@ def main():
         n, c = map(int, input().split())
         a = list(map(int, input().split()))
         a.sort(reverse=True)
-        curr_multiple = 1
-        larger_than_c = []
+        num_two_multiples = 0
+        num_coins = 0
         for elem in a:
-            if elem > c:
-                a.remove(elem)
-                larger_than_c.append(elem)
-        for elem in a:
-            if elem * curr_multiple > c:
-                a.remove(elem)
-                larger_than_c.append(elem)
-                # print('test', elem)
+            if elem * (2 ** num_two_multiples) > c:
+                num_coins += 1
             else:
-                curr_multiple *= 2
-        print(len(larger_than_c))
-    
-    
+                num_two_multiples += 1
+        print(num_coins)
+        
+
 if __name__ == "__main__":
     main()
