@@ -2,19 +2,17 @@ def main():
     t = int(input())
     for _ in range(t):
         n = int(input())
-        a = list(map(int, input().split()))
-        num_le = 1
-        curr_count = 0
-        max_balanced = 1
-        prev = a[0]
-        for elem in a[1:]:
-            if elem != prev:
-                max_balanced = max(curr_count * num_le, max_balanced)
-                num_le += 1
-                curr_count = 0
-                prev = elem
-            else:
-                curr_count += 1
+        ls = list(map(int, input().split()))
+        a = [0] * n
+        for x in ls:
+            a[x - 1] += 1
+        a = sorted(a)
+        s = sum(a)
+        ans = s
+        for i in range(n):
+            ans = min(ans, s - (n - i) * a[i])
+        print(n - ans)
+            
     
     
 if __name__ == '__main__':
