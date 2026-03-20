@@ -13,7 +13,6 @@ def main():
             ans = min(ans, s - (n - i) * a[i])
         print(n - ans)
             
-    
-    
+
 if __name__ == '__main__':
     main()
