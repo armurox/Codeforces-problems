@@ -14,6 +14,5 @@ def main():
         print(n - ans)
             
 
-
 if __name__ == '__main__':
     main()
