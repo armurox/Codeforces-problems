@@ -1,0 +1,13 @@
+6
+4
+abcd
+4
+abbc
+4
+abba
+6
+abbccc
+3
+aab
+3
+aba
