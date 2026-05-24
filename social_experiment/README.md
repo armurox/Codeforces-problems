@@ -6,3 +6,4 @@ Given an integer $n$, work out if it can be split between two civilization, each
 
 ## Method
 There are basically three cases. If $n$ is $2$ or $3$, then the civilization difference will be $n$. Otherwise, if $n$ is divisible by $2$, then $n$ can be split evenly between the two civilizations. Otherwise the difference will be $1$.
+
