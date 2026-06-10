@@ -18,3 +18,4 @@ int main(void)
             cout << 1 << '\n';
     }
 }
+
