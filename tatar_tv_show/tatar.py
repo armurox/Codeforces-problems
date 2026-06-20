@@ -1,36 +1,25 @@
 def main():
     t = int(input())
-    for _ in range(t):
+    for x in range(t):
         n, k = map(int, input().split())
-        s = input()
-        # count number of ones
-        num_ones = 0
-        for elem in s:
-            if elem == '1':
-                num_ones += 1
-        if num_ones % 2:
-            print('NO')
-            continue
-        if num_ones == 0:
-            print('YES')
-            continue
-        if k == n:
-            print('NO')
-            continue
-        if k == 1:
-            print('YES')
-            continue
-        for i in range(n // 2):
+        s = list(input())
+        for i in range(n - 1):
             try:
-                if s[i] != s[i + k]:
-                    print('NO')
-                    break
+                if s[i] == '1':
+                    s[i] = '0'
+                    s[i + k] = '1' if s[i + k] == '0' else '0'
             except IndexError:
-                if s[i] == 1:
+                s[i] = '1'
+                print('NO')
+                break
+        else:
+            for elem in s:
+                if elem == '1':
                     print('NO')
                     break
-        else:
-            print('YES')
+            else:
+                print('YES')
+        
 
     
 if __name__ == '__main__':
