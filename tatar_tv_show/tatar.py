@@ -1,6 +1,6 @@
 def main():
     t = int(input())
-    for x in range(t):
+    for _ in range(t):
         n, k = map(int, input().split())
         s = list(input())
         for i in range(n - 1):
