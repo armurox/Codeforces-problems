@@ -25,8 +25,7 @@ def main():
         for elem in ans:
             print(elem, end=' ')
         print()
-    
-    
-    
+
+
 if __name__ == "__main__":
     main()
