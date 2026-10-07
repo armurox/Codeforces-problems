@@ -1,0 +1,11 @@
+5
+4 b
+abca
+3 p
+xyx
+5 e
+abcbb
+8 d
+adbccbad
+10 c
+codeforces
