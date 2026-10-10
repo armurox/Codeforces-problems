@@ -3,3 +3,4 @@ Given two numbers $n$ and $k$, where $k$ is the number of withdrawals in a bank,
 
 # Solution
 We effectively greedily compute the largest doubling first, which is $2^(n - k + 1)$, and then the left over simply just singluar doubling's $k - 1$ times.
+
